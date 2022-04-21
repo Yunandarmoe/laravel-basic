@@ -8,10 +8,11 @@ Route::get('/', function () {
 });
 
 Route::get('/pizzas', function () {
-    $pizza = [
-        'type' => 'hawaiian',
-        'base' => 'garlic crust',
-        'price' => 10
+    $pizzas = [
+        ['type' => 'hawaiian', 'base' => 'chessy crust'],
+        ['type' => 'pepproni', 'base' => 'garlic crust'],
+        ['type' => 'veg supreme', 'base' => 'thin & crust'],
     ];
-    return view('pizzas', $pizza);
+    
+    return view('pizzas', ['pizzas' => $pizzas]);
 });
