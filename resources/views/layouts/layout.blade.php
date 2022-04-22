@@ -69,6 +69,15 @@
       padding: 20px;
       text-align: center;
     }
+
+    .title {
+      font-size: 50px;
+      text-transform: uppercase;
+      border-bottom: 2px solid;
+      padding: 12px 0;
+      color: #5e2195;
+    }
+    
   </style>
 </head>
 
